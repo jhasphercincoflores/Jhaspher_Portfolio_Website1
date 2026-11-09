@@ -1,0 +1,207 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #081b29;
+    color: white;
+}
+
+/* Navigation Bar */
+header {
+    background: #05131e;
+    padding: 20px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #00eeff;
+    font-size: 25px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin-left: 25px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #00eeff;
+}
+
+/* Home Section */
+.home {
+    min-height: 90vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 8%;
+    gap: 30px;
+}
+
+.home-content {
+    max-width: 550px;
+}
+
+.home-content h3 {
+    font-size: 25px;
+}
+
+.home-content h1 {
+    font-size: 45px;
+    color: #00eeff;
+    margin: 10px 0;
+}
+
+.home-content h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #00eeff;
+    color: #081b29;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: white;
+}
+
+/* Profile Image */
+.home-image img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #00eeff;
+}
+
+/* General Sections */
+.section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.heading {
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+
+.heading span {
+    color: #00eeff;
+}
+
+.section p {
+    line-height: 1.8;
+    max-width: 750px;
+    margin: 10px auto;
+}
+
+/* Cards */
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card {
+    background: #102c40;
+    padding: 30px;
+    border-radius: 15px;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: #16435c;
+}
+
+.card h3 {
+    color: #00eeff;
+    margin-bottom: 15px;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    background: #05131e;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .navbar ul li {
+        margin-left: 0;
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .home-content h1 {
+        font-size: 32px;
+    }
+
+    .home-image img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
